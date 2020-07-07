@@ -1,0 +1,23 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "* Figma\r * Картинки",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadezhdaKagarlyk/mesto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadezhdaKagarlyk/mesto/issues"
+  },
+  "homepage": "https://github.com/NadezhdaKagarlyk/mesto#readme",
+  "devDependencies": {
+    "create-by-css": "github:tadatuta/bem-tools-create-by-css"
+  }
+}
