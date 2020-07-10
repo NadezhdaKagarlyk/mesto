@@ -6,6 +6,8 @@ const jobInput = document.querySelector('.popup__input_type_job');
 const profileName = document.querySelector('.profile__title');
 const profileInfo = document.querySelector('.profile__subtitle');
 const formElement = document.querySelector('.popup__form');
+nameInput.value = profileName.textContent;
+jobInput.value = profileInfo.textContent;
 
 function togglePopup() {
   popup.classList.toggle('popup_is-open');
@@ -24,3 +26,4 @@ function formSubmitHandler (evt) {
 }
 
 formElement.addEventListener('submit', formSubmitHandler);
+

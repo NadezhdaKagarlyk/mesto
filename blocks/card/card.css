@@ -7,3 +7,8 @@
 .card {
   margin-top: 48px;
 }
+@media screen and (max-width: 400px) {
+  .card {
+    margin-top: 36px;
+  }
+}

@@ -9,11 +9,7 @@
 }
 @media screen and (max-width: 900px) {
   .card__list {
-    padding: 0 20px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .card__list {
-    padding: 0 9px;
+    padding: 0 19px;
+    gap: 18px;
   }
 }

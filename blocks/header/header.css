@@ -1,4 +1,10 @@
-@import url(./__line/header__line.css);
 @import url(./__logo/header__logo.css);
-
+.header::after {
+  content: "";
+  background: url(../../images/line.svg);
+  height: 1px;
+  width: 100%;
+  opacity: 0.7;
+  display: block;
+}
 
