@@ -32,5 +32,3 @@ function formSubmitHandler (evt) {
 formElement.addEventListener('submit', formSubmitHandler);
 
 
-console.log(nameInput.value);
-
