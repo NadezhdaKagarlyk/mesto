@@ -13,4 +13,5 @@
 }
 .popup__button-save:hover {
   background: rgba(0, 0, 0, 0.8);
+  transition: ease-out 0.5s;
 }
