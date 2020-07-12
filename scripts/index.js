@@ -9,9 +9,9 @@ const formElement = document.querySelector('.popup__form');
 
 
 openPopupButton.addEventListener("click", () => {
-  popup.classList.add('popup_is-open');
   nameInput.value = profileName.textContent;
   jobInput.value = profileInfo.textContent;
+  popup.classList.add('popup_is-open');
 })
 
 
