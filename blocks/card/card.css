@@ -4,6 +4,9 @@
 @import url(./__like/card__like.css);
 @import url(./__list/card__list.css);
 @import url(./__subtitle/card__subtitle.css);
+@import url(./__delete/card__delete.css);
+
+@import url(./__like/_active/card__like_active.css);
 .card {
   margin-top: 48px;
 }

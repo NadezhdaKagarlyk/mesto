@@ -4,7 +4,9 @@
 @import url(./__input/popup__input.css);
 @import url(./__form/popup__form.css);
 @import url(./__title/popup__title.css);
-
+@import url(./__container-image/popup__container-image.css);
+@import url(./__caption/popup__caption.css);
+@import url(./__img/popup__img.css);
 
 .popup {
   position: fixed;

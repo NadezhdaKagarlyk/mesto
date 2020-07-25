@@ -1,7 +1,8 @@
 .card__like {
   border: none;
   background-color: #fff;
-}
+  cursor:pointer;
+  }
 .card__like:hover {
   opacity: 0.6;
   cursor: pointer;
