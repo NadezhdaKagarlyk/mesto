@@ -26,6 +26,10 @@ const openAddCardButton = document.querySelector('.profile__button-add');
 
 const list = document.querySelector('.card__list');
 
+const cardTemplate = document.querySelector('.card-template').content.querySelector('.card__item');
+
+const imagePopupImage = popupImage.querySelector('.popup__img');
+const titlePopupImage = popupImage.querySelector('.popup__caption');
 
 openPopupButton.addEventListener("click", () => {
   nameInput.value = profileName.textContent;
@@ -56,8 +60,6 @@ function addCardSubmitHandler(evt) {
 editForm.addEventListener('submit', formSubmitHandler);
 addCardForm.addEventListener('submit', addCardSubmitHandler);
 
-//2 popup
-
 
 openAddCardButton.addEventListener("click", () => {
   popupAddCard.classList.add('popup_is-open');
@@ -70,7 +72,6 @@ function closePopupAdd() {
 
 addCardClosePopupButton.addEventListener("click", closePopupAdd);
 
-//массив фото
 
 const initialCards = [
   {
@@ -98,7 +99,7 @@ const initialCards = [
       link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
   }
 ];
-const cardTemplate = document.querySelector('.card-template').content.querySelector('.card__item');
+
 
 initialCards.forEach ((data) => {
   renderCard(data);
@@ -110,21 +111,21 @@ function handlerDeleteClick(button) {
 }
 
 
-
-
 function closeImageWindow() {
   popupImage.classList.remove('popup_is-open');
 }
 
 ImageClosePopupButton.addEventListener("click", closeImageWindow);
 
-const imagePopupImage = popupImage.querySelector('.popup__img');
-const titlePopupImage = popupImage.querySelector('.popup__caption');
 
 function handlerImageClick(src, textcontent) {
   popupImage.classList.add('popup_is-open');
   titlePopupImage.textContent = textcontent;
   imagePopupImage.src = src;
+}
+
+function handlerLikeClick(cardLike) {
+  cardLike.classList.toggle('card__like_active');
 }
 
   function createCard(data){
@@ -135,23 +136,18 @@ function handlerImageClick(src, textcontent) {
     const cardDelete = cardElement.querySelector('.card__delete');
 
     cardTitle.textContent = data.name;
-
     cardImage.style.backgroundImage = `url(${data.link})`;
 
     cardLike.addEventListener('click', () => {
-      // handlerLikeClick(cardLike);
+      handlerLikeClick(cardLike);
     })
 
     cardDelete.addEventListener('click', () => {
       handlerDeleteClick(cardDelete);
     })
     cardImage.addEventListener("click", () => {
-      console.log('222');
-      handlerImageClick(imagePopupImage.src, cardTitle.textContent);
-
+      handlerImageClick(data.link, data.name);
     });
-
-
 
     return cardElement;
   }

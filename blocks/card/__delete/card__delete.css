@@ -10,3 +10,6 @@
   cursor: pointer;
   transition: ease-out 0.5s;
  }
+ .card__delete:focus{
+  outline: none;
+}

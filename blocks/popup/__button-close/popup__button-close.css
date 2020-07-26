@@ -15,6 +15,6 @@
   opacity: 0.6;
   transition: ease-out 0.5s;
 }
-.popup__button-close:active {
+.popup__button-close:focus {
   outline: none;
 }

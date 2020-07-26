@@ -2,9 +2,16 @@
   border: none;
   background-color: #fff;
   cursor:pointer;
-  }
+  background: url(../../../images/like.svg) no-repeat;
+  width: 23px;
+    height: 21px;
+    align-self: center;
+}
 .card__like:hover {
   opacity: 0.6;
   cursor: pointer;
   transition: ease-out 0.5s;
  }
+.card__like:focus{
+  outline: none;
+}
