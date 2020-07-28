@@ -68,7 +68,7 @@ addCardClosePopupButton.addEventListener("click", () =>{
 editProfileClosePopupButton.addEventListener("click", () =>{
   closePopupWindow(popupEditProfile);
 });
-ImageClosePopupButton.addEventListener("click", () => {
+imageClosePopupButton.addEventListener("click", () => {
  closePopupWindow(popupImage);
 });
 
