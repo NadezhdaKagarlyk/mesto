@@ -8,7 +8,7 @@ const addCardForm = popupAddCard.querySelector('.popup__form');
 const openPopupButton = document.querySelector('.profile__button-edit');
 const editProfileClosePopupButton = popupEditProfile.querySelector('.popup__button-close');
 const addCardClosePopupButton = popupAddCard.querySelector('.popup__button-close');
-const ImageClosePopupButton = popupImage.querySelector('.popup__button-close');
+const imageClosePopupButton = popupImage.querySelector('.popup__button-close');
 
 const nameInput = editForm.querySelector('.popup__input_type_name');
 const jobInput = editForm.querySelector('.popup__input_type_job');
